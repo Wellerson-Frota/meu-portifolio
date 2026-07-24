@@ -20,7 +20,7 @@ html {
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  background: radial-gradient(circle at top, #111b34 0%, var(--bg) 45%);
+  background: radial-gradient(circle at top, #15213f 0%, var(--bg) 52%);
   color: var(--text);
   line-height: 1.6;
 }
@@ -159,7 +159,7 @@ main {
 }
 
 .section-card {
-  padding: 1.2rem;
+  padding: 1.3rem;
   margin-top: 1rem;
 }
 
@@ -175,6 +175,29 @@ main {
 .item-card,
 .project-card {
   padding: 1rem;
+}
+
+.project-link-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.55);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-link-icon:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.project-link-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: #dbeafe;
 }
 
 .item-card header {
@@ -226,6 +249,40 @@ main {
 .plain-list {
   margin: 0;
   padding-left: 1.1rem;
+}
+
+.icon-links {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.icon-links a {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.7);
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.icon-links a:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  background: rgba(15, 23, 42, 0.95);
+}
+
+.icon-links svg {
+  width: 20px;
+  height: 20px;
+  fill: #e2e8f0;
+}
+
+.location {
+  margin-top: 0.9rem;
 }
 
 .site-footer {
