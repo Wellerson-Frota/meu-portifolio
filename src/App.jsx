@@ -14,13 +14,21 @@ const experiences = [
     role: 'Estagiário de TI',
     company: 'Pague Menos · Fortaleza, CE',
     period: 'Nov 2024 — atual',
-    description: 'Atuação com análise de bancos de dados, resolução de chamados internos e rotinas com SQL e C#.'
+    activities: [
+      'Atendimento de chamados internos com foco em agilidade e resolução de problemas.',
+      'Apoio em consultas e análise de dados em banco para suporte às equipes.',
+      'Execução de rotinas técnicas com SQL e C#, contribuindo para estabilidade dos processos.'
+    ]
   },
   {
     role: 'Apoio à Gestão',
     company: 'Mais Serviços · Fortaleza, CE',
-    period: 'Jun 2023 — atual',
-    description: 'Organização de processos, documentos e relatórios, com foco em controle de prazos e eficiência operacional.'
+    period: 'Jun 2023 — 2024',
+    activities: [
+      'Organização de processos administrativos e documentação interna.',
+      'Elaboração e acompanhamento de relatórios para apoio à tomada de decisão.',
+      'Controle de prazos e rotinas operacionais para melhorar a eficiência da equipe.'
+    ]
   }
 ];
 
@@ -58,37 +66,25 @@ export default function App() {
       <main className="container">
         <section id="home" className="hero">
           <p className="eyebrow">Estagiário de TI · Desenvolvedor em formação</p>
-          <h1>Construindo uma carreira sólida em Análise e Desenvolvimento de Sistemas.</h1>
+          <h1>Análise e Desenvolvimento de Sistemas com foco em evolução real.</h1>
           <p className="lead">
-            Atuo com suporte, análise de dados e organização de processos. Estou cursando ADS e evolução Full Stack,
-            focado em construir soluções eficientes e com boa experiência de uso.
+            Olá! Sou Wellerson Moraes. Tenho experiência com suporte de TI e processos administrativos,
+            e hoje direciono minha carreira para tecnologia. Estou cursando ADS e estudando Full Stack,
+            sempre buscando aprender, evoluir e gerar resultado com consistência.
           </p>
           <div className="hero-actions">
             <a className="btn btn-primary" href="#contato">Falar comigo</a>
             <a className="btn btn-ghost" href="#projetos">Ver projetos</a>
-          </div>
-          <div className="highlights-grid">
-            <article className="highlight-card">
-              <h3>Deploy contínuo</h3>
-              <p>Atualização automática no Vercel a cada push na branch de produção.</p>
-            </article>
-            <article className="highlight-card">
-              <h3>Performance</h3>
-              <p>Estrutura otimizada em React + Vite para carregamento rápido.</p>
-            </article>
-            <article className="highlight-card">
-              <h3>Design responsivo</h3>
-              <p>Layout adaptado para celular, tablet e desktop.</p>
-            </article>
           </div>
         </section>
 
         <section id="sobre" className="section-card">
           <h2>Sobre</h2>
           <p>
-            Profissional com experiência em áreas administrativa, comercial e suporte de TI, com boa comunicação,
-            organização e foco em resultados. Atualmente curso Análise e Desenvolvimento de Sistemas e busco
-            consolidar carreira em tecnologia com atuação prática em desenvolvimento e dados.
+            Sou uma pessoa comprometida, comunicativa e com facilidade para trabalhar em equipe.
+            Trago uma base forte de organização e atendimento, construída em experiências anteriores,
+            e atualmente aplico isso na minha evolução em tecnologia. Meu objetivo é crescer na área de desenvolvimento,
+            contribuindo com soluções práticas, aprendizado contínuo e responsabilidade no dia a dia.
           </p>
         </section>
 
@@ -102,7 +98,11 @@ export default function App() {
                   <span>{experience.period}</span>
                 </header>
                 <p className="subtitle">{experience.company}</p>
-                <p>{experience.description}</p>
+                <ul className="experience-points">
+                  {experience.activities.map((activity) => (
+                    <li key={activity}>{activity}</li>
+                  ))}
+                </ul>
               </article>
             ))}
           </div>
@@ -110,12 +110,15 @@ export default function App() {
 
         <section id="projetos" className="section-card">
           <h2>Projetos</h2>
-          <div className="projects-grid">
+          <p className="subtitle">Projetos e estudos que refletem minha evolução prática.</p>
+          <div className="project-list">
             {projects.map((project) => (
-              <article key={project.name} className="project-card">
-                <h3>{project.name}</h3>
-                <p>{project.description}</p>
-                <p className="subtitle">Tecnologias: {project.tech}</p>
+              <article key={project.name} className="project-item">
+                <div>
+                  <h3>{project.name}</h3>
+                  <p>{project.description}</p>
+                  <p className="subtitle">Tecnologias: {project.tech}</p>
+                </div>
                 <a className="project-link-icon" href={project.link} target="_blank" rel="noreferrer" aria-label={`Abrir ${project.name}`}>
                   <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
                     <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zm5 18H5V5h7V3H5a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z" />
