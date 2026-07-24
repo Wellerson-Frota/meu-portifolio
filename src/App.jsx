@@ -161,7 +161,7 @@ export default function App() {
               <li>Telefone/WhatsApp: <a href="tel:+5585997190151">(85) 99719-0151</a></li>
               <li>GitHub: <a href="https://github.com/Wellerson-Frota" target="_blank" rel="noreferrer">@Wellerson-Frota</a></li>
               <li>Localização: Fortaleza, CE</li>
-              <li>LinkedIn: <a href="#" target="_blank" rel="noreferrer">Seu LinkedIn</a></li>
+              <li>LinkedIn: <a href="https://www.linkedin.com/in/wellerson-moraes-682050235/" target="_blank" rel="noreferrer">wellerson-moraes-682050235</a></li>
             </ul>
           </article>
         </section>
