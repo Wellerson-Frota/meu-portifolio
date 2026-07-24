@@ -2,6 +2,7 @@ const skills = [
   'SQL',
   'C#',
   'Suporte de TI',
+  'Sustentação',
   'Análise de dados',
   'Informática avançada',
   'Trabalho em equipe',
@@ -17,7 +18,8 @@ const experiences = [
     activities: [
       'Atendimento de chamados internos com foco em agilidade e resolução de problemas.',
       'Apoio em consultas e análise de dados em banco para suporte às equipes.',
-      'Execução de rotinas técnicas com SQL e C#, contribuindo para estabilidade dos processos.'
+      'Execução de rotinas técnicas com SQL e C#, contribuindo para estabilidade dos processos.',
+      'Atuação na sustentação de sistemas de TI, garantindo a alta disponibilidade, resolução de incidentes e melhoria contínua dos ambientes em produção.'
     ]
   },
   {
@@ -149,8 +151,7 @@ export default function App() {
           </article>
           <article id="contato">
             <h2>Contato</h2>
-            <p className="subtitle">Clique nos ícones para acessar meus canais.</p>
-            <div className="icon-links" aria-label="Links de contato">
+                <div className="icon-links" aria-label="Links de contato">
               <a href="mailto:wellersonmorais777@gmail.com" target="_blank" rel="noreferrer" aria-label="Email">
                 <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
                   <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.24-8 5.34-8-5.34V6l8 5.33L20 6v2.24z" />
