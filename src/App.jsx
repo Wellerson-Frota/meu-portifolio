@@ -146,7 +146,7 @@ export default function App() {
             <ul className="plain-list">
               <li>Curso de Auxiliar Administrativo — SENAC</li>
               <li>Análise e Desenvolvimento de Sistemas — Estácio (em andamento)</li>
-              <li>Curso de Programação Full Stack (em andamento) — Infinity School</li>
+              <li>Curso de Programação Full Stack — Infinity School — (em andamento) </li>
             </ul>
           </article>
           <article id="contato">
