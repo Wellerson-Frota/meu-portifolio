@@ -68,7 +68,7 @@ export default function App() {
       <main className="container">
         <section id="home" className="hero">
           <p className="eyebrow">Estagiário de TI · Desenvolvedor em formação</p>
-          <h1>Análise e Desenvolvimento de Sistemas com foco em evolução real.</h1>
+          <h1>Análise e Desenvolvimento de Sistemas.</h1>
           <p className="lead">
             Olá! Sou Wellerson Moraes. Tenho experiência com suporte de TI e processos administrativos,
             e hoje direciono minha carreira para tecnologia. Estou cursando ADS e estudando Full Stack,
@@ -146,7 +146,7 @@ export default function App() {
             <ul className="plain-list">
               <li>Curso de Auxiliar Administrativo — SENAC</li>
               <li>Análise e Desenvolvimento de Sistemas — Estácio (em andamento)</li>
-              <li>Curso de Programação Full Stack (em andamento)</li>
+              <li>Curso de Programação Full Stack (em andamento) — Infinity School</li>
             </ul>
           </article>
           <article id="contato">
